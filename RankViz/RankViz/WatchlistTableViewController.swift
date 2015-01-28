@@ -16,12 +16,6 @@ class WatchlistTableViewController : UITableViewController {
         self.title = "Watchlists"
     }
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-    }
-
-
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return CustomPortfolios.sharedInstance.portfolios.count;
     }

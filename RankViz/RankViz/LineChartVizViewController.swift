@@ -31,6 +31,9 @@ class LineChartVizViewController : UIViewController {
 
     override func loadView() {
         super.loadView()
+        self.automaticallyAdjustsScrollViewInsets = false
+        self.title = portfolio.name
+        
         self.containerView = self.view
         
         self.rowHeadersController = ScrollableEquitiesRowHeadersViewController(portfolio: self.portfolio, rowHeaderDimensions: rowHeaderDimensions)
@@ -56,9 +59,7 @@ class LineChartVizViewController : UIViewController {
         
         containerView.addVisualConstraint("H:|-0-[childView(==\(rowHeaderDimensions.width))]", viewsDict: viewsDict)
         containerView.addVisualConstraint("V:[topGuide]-\(columnHeaderDimensions.height)-[childView]-[bottomGuide]", viewsDict: viewsDict)
-        
-        println("columnHeaderDimensions.height")
-        println("Done displayRowHeaders")
+
     }
     
     func displayColumnHeaders(childVC: UIViewController) {
@@ -72,14 +73,12 @@ class LineChartVizViewController : UIViewController {
         
         containerView.addVisualConstraint("H:|-\(rowHeaderDimensions.width )-[childView]|", viewsDict: viewsDict)
         containerView.addVisualConstraint("V:[topGuide]-0-[childView(==\(columnHeaderDimensions.height))]", viewsDict: viewsDict)
-        println("Done displayColumnHeaders")
+
     }
     
     func displayLineChartView() {
         self.lineChartView = LineChartView(frame: CGRectMake(rowHeaderDimensions.width, columnHeaderDimensions.height + self.topLayoutGuide.length, columnHeaderDimensions.width * CGFloat(portfolio.interestedMetrics.count + 1), rowHeadersController.view.bounds.height), delegate: PortfolioLineChartViewDelegate(outer: self))
         
-        lineChartView.tag = 899
-        //rowHeaderDimensions.height * CGFloat(portfolio.equities.count
         containerView.addSubview(lineChartView)
     }
     
