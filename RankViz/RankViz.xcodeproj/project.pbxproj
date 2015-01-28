@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B64969E21A77FB4C00A13CB5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64969E11A77FB4C00A13CB5 /* AppDelegate.swift */; };
+		B64969E51A77FB4C00A13CB5 /* RankViz.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B64969E31A77FB4C00A13CB5 /* RankViz.xcdatamodeld */; };
+		B64969E71A77FB4C00A13CB5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64969E61A77FB4C00A13CB5 /* ViewController.swift */; };
+		B64969EA1A77FB4C00A13CB5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B64969E81A77FB4C00A13CB5 /* Main.storyboard */; };
+		B64969EC1A77FB4C00A13CB5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B64969EB1A77FB4C00A13CB5 /* Images.xcassets */; };
+		B64969EF1A77FB4C00A13CB5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B64969ED1A77FB4C00A13CB5 /* LaunchScreen.xib */; };
+		B64969FB1A77FB4C00A13CB5 /* RankVizTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64969FA1A77FB4C00A13CB5 /* RankVizTests.swift */; };
+		B6496A091A780A4D00A13CB5 /* SimpleBidirectionalTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6496A041A780A4D00A13CB5 /* SimpleBidirectionalTableView.swift */; };
+		B6496A0A1A780A4D00A13CB5 /* SimpleBirectionalTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6496A051A780A4D00A13CB5 /* SimpleBirectionalTableViewDelegate.swift */; };
+		B6496A0B1A780A4D00A13CB5 /* SimpleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6496A061A780A4D00A13CB5 /* SimpleTableViewCell.swift */; };
+		B6496A0C1A780A4D00A13CB5 /* SimpleBidirectionalTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6496A071A780A4D00A13CB5 /* SimpleBidirectionalTableViewController.swift */; };
+		B6496A0D1A780A4D00A13CB5 /* SimpleTableViewCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6496A081A780A4D00A13CB5 /* SimpleTableViewCellDelegate.swift */; };
+		B6496A151A780B1B00A13CB5 /* LineChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6496A111A780B1B00A13CB5 /* LineChartViewController.swift */; };
+		B6496A161A780B1B00A13CB5 /* LineChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6496A121A780B1B00A13CB5 /* LineChartView.swift */; };
+		B6496A171A780B1B00A13CB5 /* LineSegmentLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6496A131A780B1B00A13CB5 /* LineSegmentLayer.swift */; };
+		B6496A181A780B1B00A13CB5 /* LineChartViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6496A141A780B1B00A13CB5 /* LineChartViewDelegate.swift */; };
+		B6496A1F1A780BD400A13CB5 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6496A1D1A780BD400A13CB5 /* UIViewExtensions.swift */; };
+		B6496A201A780BD400A13CB5 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6496A1E1A780BD400A13CB5 /* StringExtensions.swift */; };
+		B6496A291A780BE500A13CB5 /* Equity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6496A211A780BE500A13CB5 /* Equity.swift */; };
+		B6496A2A1A780BE500A13CB5 /* Metric.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6496A221A780BE500A13CB5 /* Metric.swift */; };
+		B6496A2B1A780BE500A13CB5 /* MetricType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6496A231A780BE500A13CB5 /* MetricType.swift */; };
+		B6496A2C1A780BE500A13CB5 /* Portfolio.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6496A241A780BE500A13CB5 /* Portfolio.swift */; };
+		B6496A2D1A780BE500A13CB5 /* PortfolioMgr.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6496A251A780BE500A13CB5 /* PortfolioMgr.swift */; };
+		B6496A2E1A780BE500A13CB5 /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6496A261A780BE500A13CB5 /* Grid.swift */; };
+		B6496A2F1A780BE500A13CB5 /* MetricsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6496A271A780BE500A13CB5 /* MetricsManager.swift */; };
+		B6496A301A780BE500A13CB5 /* EquityMaster.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6496A281A780BE500A13CB5 /* EquityMaster.swift */; };
+		B6496A361A780C1500A13CB5 /* ScrollableEquitiesRowHeadersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6496A321A780C1500A13CB5 /* ScrollableEquitiesRowHeadersViewController.swift */; };
+		B6496A371A780C1500A13CB5 /* EquityMetricsColumnHeadersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6496A331A780C1500A13CB5 /* EquityMetricsColumnHeadersViewController.swift */; };
+		B6496A381A780C1500A13CB5 /* EquityRowHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6496A341A780C1500A13CB5 /* EquityRowHeaderView.swift */; };
+		B6496A391A780C1500A13CB5 /* LineChartVizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6496A351A780C1500A13CB5 /* LineChartVizViewController.swift */; };
+		B6496A3B1A781D2B00A13CB5 /* WatchlistTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6496A3A1A781D2B00A13CB5 /* WatchlistTableViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B64969F51A77FB4C00A13CB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B64969D41A77FB4C00A13CB5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B64969DB1A77FB4C00A13CB5;
+			remoteInfo = RankViz;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B64969DC1A77FB4C00A13CB5 /* RankViz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RankViz.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B64969E01A77FB4C00A13CB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B64969E11A77FB4C00A13CB5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B64969E41A77FB4C00A13CB5 /* RankViz.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RankViz.xcdatamodel; sourceTree = "<group>"; };
+		B64969E61A77FB4C00A13CB5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B64969E91A77FB4C00A13CB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B64969EB1A77FB4C00A13CB5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B64969EE1A77FB4C00A13CB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		B64969F41A77FB4C00A13CB5 /* RankVizTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RankVizTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B64969F91A77FB4C00A13CB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B64969FA1A77FB4C00A13CB5 /* RankVizTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankVizTests.swift; sourceTree = "<group>"; };
+		B6496A041A780A4D00A13CB5 /* SimpleBidirectionalTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleBidirectionalTableView.swift; sourceTree = "<group>"; };
+		B6496A051A780A4D00A13CB5 /* SimpleBirectionalTableViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleBirectionalTableViewDelegate.swift; sourceTree = "<group>"; };
+		B6496A061A780A4D00A13CB5 /* SimpleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleTableViewCell.swift; sourceTree = "<group>"; };
+		B6496A071A780A4D00A13CB5 /* SimpleBidirectionalTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleBidirectionalTableViewController.swift; sourceTree = "<group>"; };
+		B6496A081A780A4D00A13CB5 /* SimpleTableViewCellDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleTableViewCellDelegate.swift; sourceTree = "<group>"; };
+		B6496A111A780B1B00A13CB5 /* LineChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineChartViewController.swift; sourceTree = "<group>"; };
+		B6496A121A780B1B00A13CB5 /* LineChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineChartView.swift; sourceTree = "<group>"; };
+		B6496A131A780B1B00A13CB5 /* LineSegmentLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineSegmentLayer.swift; sourceTree = "<group>"; };
+		B6496A141A780B1B00A13CB5 /* LineChartViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineChartViewDelegate.swift; sourceTree = "<group>"; };
+		B6496A1D1A780BD400A13CB5 /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		B6496A1E1A780BD400A13CB5 /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		B6496A211A780BE500A13CB5 /* Equity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Equity.swift; sourceTree = "<group>"; };
+		B6496A221A780BE500A13CB5 /* Metric.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Metric.swift; sourceTree = "<group>"; };
+		B6496A231A780BE500A13CB5 /* MetricType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetricType.swift; sourceTree = "<group>"; };
+		B6496A241A780BE500A13CB5 /* Portfolio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Portfolio.swift; sourceTree = "<group>"; };
+		B6496A251A780BE500A13CB5 /* PortfolioMgr.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortfolioMgr.swift; sourceTree = "<group>"; };
+		B6496A261A780BE500A13CB5 /* Grid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Grid.swift; sourceTree = "<group>"; };
+		B6496A271A780BE500A13CB5 /* MetricsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetricsManager.swift; sourceTree = "<group>"; };
+		B6496A281A780BE500A13CB5 /* EquityMaster.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EquityMaster.swift; sourceTree = "<group>"; };
+		B6496A321A780C1500A13CB5 /* ScrollableEquitiesRowHeadersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollableEquitiesRowHeadersViewController.swift; sourceTree = "<group>"; };
+		B6496A331A780C1500A13CB5 /* EquityMetricsColumnHeadersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EquityMetricsColumnHeadersViewController.swift; sourceTree = "<group>"; };
+		B6496A341A780C1500A13CB5 /* EquityRowHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EquityRowHeaderView.swift; sourceTree = "<group>"; };
+		B6496A351A780C1500A13CB5 /* LineChartVizViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineChartVizViewController.swift; sourceTree = "<group>"; };
+		B6496A3A1A781D2B00A13CB5 /* WatchlistTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchlistTableViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B64969D91A77FB4C00A13CB5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B64969F11A77FB4C00A13CB5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B64969D31A77FB4C00A13CB5 = {
+			isa = PBXGroup;
+			children = (
+				B64969DE1A77FB4C00A13CB5 /* RankViz */,
+				B64969F71A77FB4C00A13CB5 /* RankVizTests */,
+				B64969DD1A77FB4C00A13CB5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B64969DD1A77FB4C00A13CB5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B64969DC1A77FB4C00A13CB5 /* RankViz.app */,
+				B64969F41A77FB4C00A13CB5 /* RankVizTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B64969DE1A77FB4C00A13CB5 /* RankViz */ = {
+			isa = PBXGroup;
+			children = (
+				B6496A1C1A780BC700A13CB5 /* Common */,
+				B6496A1A1A780BA300A13CB5 /* Equities */,
+				B6496A0F1A780A7500A13CB5 /* Simple Table View */,
+				B6496A101A780B0F00A13CB5 /* Chart Viz */,
+				B6496A191A780B3300A13CB5 /* Main */,
+				B64969ED1A77FB4C00A13CB5 /* LaunchScreen.xib */,
+				B64969DF1A77FB4C00A13CB5 /* Supporting Files */,
+			);
+			path = RankViz;
+			sourceTree = "<group>";
+		};
+		B64969DF1A77FB4C00A13CB5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B64969E01A77FB4C00A13CB5 /* Info.plist */,
+				B64969E31A77FB4C00A13CB5 /* RankViz.xcdatamodeld */,
+				B64969EB1A77FB4C00A13CB5 /* Images.xcassets */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B64969F71A77FB4C00A13CB5 /* RankVizTests */ = {
+			isa = PBXGroup;
+			children = (
+				B64969FA1A77FB4C00A13CB5 /* RankVizTests.swift */,
+				B64969F81A77FB4C00A13CB5 /* Supporting Files */,
+			);
+			path = RankVizTests;
+			sourceTree = "<group>";
+		};
+		B64969F81A77FB4C00A13CB5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B64969F91A77FB4C00A13CB5 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B6496A0F1A780A7500A13CB5 /* Simple Table View */ = {
+			isa = PBXGroup;
+			children = (
+				B6496A041A780A4D00A13CB5 /* SimpleBidirectionalTableView.swift */,
+				B6496A051A780A4D00A13CB5 /* SimpleBirectionalTableViewDelegate.swift */,
+				B6496A061A780A4D00A13CB5 /* SimpleTableViewCell.swift */,
+				B6496A071A780A4D00A13CB5 /* SimpleBidirectionalTableViewController.swift */,
+				B6496A081A780A4D00A13CB5 /* SimpleTableViewCellDelegate.swift */,
+			);
+			name = "Simple Table View";
+			sourceTree = "<group>";
+		};
+		B6496A101A780B0F00A13CB5 /* Chart Viz */ = {
+			isa = PBXGroup;
+			children = (
+				B6496A111A780B1B00A13CB5 /* LineChartViewController.swift */,
+				B6496A121A780B1B00A13CB5 /* LineChartView.swift */,
+				B6496A131A780B1B00A13CB5 /* LineSegmentLayer.swift */,
+				B6496A141A780B1B00A13CB5 /* LineChartViewDelegate.swift */,
+			);
+			name = "Chart Viz";
+			sourceTree = "<group>";
+		};
+		B6496A191A780B3300A13CB5 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				B64969E81A77FB4C00A13CB5 /* Main.storyboard */,
+				B64969E11A77FB4C00A13CB5 /* AppDelegate.swift */,
+				B64969E61A77FB4C00A13CB5 /* ViewController.swift */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		B6496A1A1A780BA300A13CB5 /* Equities */ = {
+			isa = PBXGroup;
+			children = (
+				B6496A1B1A780BB200A13CB5 /* Model */,
+				B6496A311A780BFB00A13CB5 /* Viz Driver */,
+			);
+			name = Equities;
+			sourceTree = "<group>";
+		};
+		B6496A1B1A780BB200A13CB5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B6496A211A780BE500A13CB5 /* Equity.swift */,
+				B6496A221A780BE500A13CB5 /* Metric.swift */,
+				B6496A231A780BE500A13CB5 /* MetricType.swift */,
+				B6496A241A780BE500A13CB5 /* Portfolio.swift */,
+				B6496A251A780BE500A13CB5 /* PortfolioMgr.swift */,
+				B6496A261A780BE500A13CB5 /* Grid.swift */,
+				B6496A271A780BE500A13CB5 /* MetricsManager.swift */,
+				B6496A281A780BE500A13CB5 /* EquityMaster.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		B6496A1C1A780BC700A13CB5 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				B6496A1D1A780BD400A13CB5 /* UIViewExtensions.swift */,
+				B6496A1E1A780BD400A13CB5 /* StringExtensions.swift */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		B6496A311A780BFB00A13CB5 /* Viz Driver */ = {
+			isa = PBXGroup;
+			children = (
+				B6496A3A1A781D2B00A13CB5 /* WatchlistTableViewController.swift */,
+				B6496A321A780C1500A13CB5 /* ScrollableEquitiesRowHeadersViewController.swift */,
+				B6496A331A780C1500A13CB5 /* EquityMetricsColumnHeadersViewController.swift */,
+				B6496A341A780C1500A13CB5 /* EquityRowHeaderView.swift */,
+				B6496A351A780C1500A13CB5 /* LineChartVizViewController.swift */,
+			);
+			name = "Viz Driver";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B64969DB1A77FB4C00A13CB5 /* RankViz */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B64969FE1A77FB4C00A13CB5 /* Build configuration list for PBXNativeTarget "RankViz" */;
+			buildPhases = (
+				B64969D81A77FB4C00A13CB5 /* Sources */,
+				B64969D91A77FB4C00A13CB5 /* Frameworks */,
+				B64969DA1A77FB4C00A13CB5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RankViz;
+			productName = RankViz;
+			productReference = B64969DC1A77FB4C00A13CB5 /* RankViz.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B64969F31A77FB4C00A13CB5 /* RankVizTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6496A011A77FB4C00A13CB5 /* Build configuration list for PBXNativeTarget "RankVizTests" */;
+			buildPhases = (
+				B64969F01A77FB4C00A13CB5 /* Sources */,
+				B64969F11A77FB4C00A13CB5 /* Frameworks */,
+				B64969F21A77FB4C00A13CB5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B64969F61A77FB4C00A13CB5 /* PBXTargetDependency */,
+			);
+			name = RankVizTests;
+			productName = RankVizTests;
+			productReference = B64969F41A77FB4C00A13CB5 /* RankVizTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B64969D41A77FB4C00A13CB5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = truquity;
+				TargetAttributes = {
+					B64969DB1A77FB4C00A13CB5 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					B64969F31A77FB4C00A13CB5 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = B64969DB1A77FB4C00A13CB5;
+					};
+				};
+			};
+			buildConfigurationList = B64969D71A77FB4C00A13CB5 /* Build configuration list for PBXProject "RankViz" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B64969D31A77FB4C00A13CB5;
+			productRefGroup = B64969DD1A77FB4C00A13CB5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B64969DB1A77FB4C00A13CB5 /* RankViz */,
+				B64969F31A77FB4C00A13CB5 /* RankVizTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B64969DA1A77FB4C00A13CB5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B64969EA1A77FB4C00A13CB5 /* Main.storyboard in Resources */,
+				B64969EF1A77FB4C00A13CB5 /* LaunchScreen.xib in Resources */,
+				B64969EC1A77FB4C00A13CB5 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B64969F21A77FB4C00A13CB5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B64969D81A77FB4C00A13CB5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6496A2D1A780BE500A13CB5 /* PortfolioMgr.swift in Sources */,
+				B6496A361A780C1500A13CB5 /* ScrollableEquitiesRowHeadersViewController.swift in Sources */,
+				B64969E71A77FB4C00A13CB5 /* ViewController.swift in Sources */,
+				B6496A161A780B1B00A13CB5 /* LineChartView.swift in Sources */,
+				B6496A2E1A780BE500A13CB5 /* Grid.swift in Sources */,
+				B6496A301A780BE500A13CB5 /* EquityMaster.swift in Sources */,
+				B6496A181A780B1B00A13CB5 /* LineChartViewDelegate.swift in Sources */,
+				B6496A3B1A781D2B00A13CB5 /* WatchlistTableViewController.swift in Sources */,
+				B6496A1F1A780BD400A13CB5 /* UIViewExtensions.swift in Sources */,
+				B64969E21A77FB4C00A13CB5 /* AppDelegate.swift in Sources */,
+				B64969E51A77FB4C00A13CB5 /* RankViz.xcdatamodeld in Sources */,
+				B6496A371A780C1500A13CB5 /* EquityMetricsColumnHeadersViewController.swift in Sources */,
+				B6496A0B1A780A4D00A13CB5 /* SimpleTableViewCell.swift in Sources */,
+				B6496A2F1A780BE500A13CB5 /* MetricsManager.swift in Sources */,
+				B6496A0D1A780A4D00A13CB5 /* SimpleTableViewCellDelegate.swift in Sources */,
+				B6496A091A780A4D00A13CB5 /* SimpleBidirectionalTableView.swift in Sources */,
+				B6496A0A1A780A4D00A13CB5 /* SimpleBirectionalTableViewDelegate.swift in Sources */,
+				B6496A291A780BE500A13CB5 /* Equity.swift in Sources */,
+				B6496A2A1A780BE500A13CB5 /* Metric.swift in Sources */,
+				B6496A391A780C1500A13CB5 /* LineChartVizViewController.swift in Sources */,
+				B6496A2C1A780BE500A13CB5 /* Portfolio.swift in Sources */,
+				B6496A201A780BD400A13CB5 /* StringExtensions.swift in Sources */,
+				B6496A2B1A780BE500A13CB5 /* MetricType.swift in Sources */,
+				B6496A381A780C1500A13CB5 /* EquityRowHeaderView.swift in Sources */,
+				B6496A151A780B1B00A13CB5 /* LineChartViewController.swift in Sources */,
+				B6496A0C1A780A4D00A13CB5 /* SimpleBidirectionalTableViewController.swift in Sources */,
+				B6496A171A780B1B00A13CB5 /* LineSegmentLayer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B64969F01A77FB4C00A13CB5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B64969FB1A77FB4C00A13CB5 /* RankVizTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B64969F61A77FB4C00A13CB5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B64969DB1A77FB4C00A13CB5 /* RankViz */;
+			targetProxy = B64969F51A77FB4C00A13CB5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B64969E81A77FB4C00A13CB5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B64969E91A77FB4C00A13CB5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B64969ED1A77FB4C00A13CB5 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B64969EE1A77FB4C00A13CB5 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B64969FC1A77FB4C00A13CB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B64969FD1A77FB4C00A13CB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B64969FF1A77FB4C00A13CB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RankViz/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B6496A001A77FB4C00A13CB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RankViz/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B6496A021A77FB4C00A13CB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = RankVizTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RankViz.app/RankViz";
+			};
+			name = Debug;
+		};
+		B6496A031A77FB4C00A13CB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = RankVizTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RankViz.app/RankViz";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B64969D71A77FB4C00A13CB5 /* Build configuration list for PBXProject "RankViz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B64969FC1A77FB4C00A13CB5 /* Debug */,
+				B64969FD1A77FB4C00A13CB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B64969FE1A77FB4C00A13CB5 /* Build configuration list for PBXNativeTarget "RankViz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B64969FF1A77FB4C00A13CB5 /* Debug */,
+				B6496A001A77FB4C00A13CB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B6496A011A77FB4C00A13CB5 /* Build configuration list for PBXNativeTarget "RankVizTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6496A021A77FB4C00A13CB5 /* Debug */,
+				B6496A031A77FB4C00A13CB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B64969E31A77FB4C00A13CB5 /* RankViz.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B64969E41A77FB4C00A13CB5 /* RankViz.xcdatamodel */,
+			);
+			currentVersion = B64969E41A77FB4C00A13CB5 /* RankViz.xcdatamodel */;
+			path = RankViz.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = B64969D41A77FB4C00A13CB5 /* Project object */;
+}
