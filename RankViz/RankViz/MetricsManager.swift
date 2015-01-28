@@ -69,9 +69,9 @@ class MetricsMgr {
     let VOLUME = MetricMetaInformation(name: "Avg Vol", importance: 2, isHigherBetter: true)
     
     //% change from 50 day moving average.
-    let PC50 = MetricMetaInformation(name: "%Chg 50DMA", importance: 2, isHigherBetter: true)
+    let PC50 = MetricMetaInformation(name: "%Chg50DMA", importance: 2, isHigherBetter: true)
     
-    let PC200 = MetricMetaInformation(name: "%Chg 200DMA", importance: 2, isHigherBetter: true)
+    let PC200 = MetricMetaInformation(name: "%Chg200DMA", importance: 2, isHigherBetter: true)
     
     init() {
         _stdMetrics["Popular"] = [PE, GAIN1M, GAIN3M]
