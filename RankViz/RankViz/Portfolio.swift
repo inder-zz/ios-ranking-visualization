@@ -58,7 +58,7 @@ import Foundation
         for equity in equities.values {
             equity.totalScore = -1
             for (key, metric) in equity.metrics {
-                metric.score = 0
+                //metric.score = 0
                 var column: GridColumn? = grid[key]
                 if (column == nil) {
                     var metaInfo: MetricMetaInformation? = getMetricMeta(byName: key)
@@ -85,7 +85,7 @@ import Foundation
         //dictionary of metricName -> array of equityName -> score
 
         var allScores: [String:[(equity:Equity, score:Float)]] = [:]
-
+        
         for (key: String, column: GridColumn) in grid {
             println("--->>> Calculating scores for \(key) <<<<----")
             var scores: [(Equity, Float)] = []
@@ -154,12 +154,12 @@ import Foundation
                 desc += ", "
             }
             desc += "\(e.symbol)"
-            if (idx == 4 && equities.count > 5) {
-                desc += " ..\(equities.count-(idx+1)) more"
-            }
-            if (idx == 4) {
-                break
-            }
+//            if (idx == 4 && equities.count > 5) {
+//                desc += " ..\(equities.count-(idx+1)) more"
+//            }
+//            if (idx == 4) {
+//                break
+//            }
         }
         return desc
     }

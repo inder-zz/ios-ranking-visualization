@@ -15,49 +15,31 @@ class Metric {
 
     unowned var owner: Equity
 
-    private var _value: Float
-    private var _rank: Int
-    private var _score: Float = 0.0
+    var score: Float = 0.0
 
     //key into MetricMetaInformation
     let name: String
 
     var value: Float {
-        get {
-            return self._value
-        }
-        set {
-            oldValue = self._value
-            _value = newValue
+        willSet {
+            oldValue = value
         }
     }
 
     var rank: Int {
-        get {
-            return self._rank
-        }
-        set {
-            oldRank = _rank
-            self._rank = newValue
+        willSet {
+            oldRank = rank
         }
     }
 
-    var score: Float {
-        get {
-            return self._score
-        }
-        set {
-            self._score = newValue
-        }
-    }
 
     var oldValue: Float?
     var oldRank: Int?
 
     init(name: String, value: Float, owner: Equity) {
         self.name = name
-        self._value = value
-        self._rank = -1
+        self.value = value
+        self.rank = -1
         self.owner = owner
     }
 

@@ -12,7 +12,7 @@ class MetricsMgr {
     class var sharedInstance: MetricsMgr {
 
         struct Static {
-            static let instance: MetricsMgr = EquityMetricsMgr()
+            static let instance: MetricsMgr = MetricsMgr()
         }
 
         return Static.instance
@@ -24,10 +24,6 @@ class MetricsMgr {
     var _stdMetrics: [String:[MetricMetaInformation]] = [:]
 
     var _allMetrics: [String:MetricMetaInformation] = [:]
-
-    init() {
-
-    }
 
     var numSections: Int {
         return _metricsGroups.count
@@ -55,10 +51,7 @@ class MetricsMgr {
         }
         return _allMetrics[name]
     }
-}
-
-class EquityMetricsMgr: MetricsMgr {
-
+    
     //price/earnings
     let PE = MetricMetaInformation(name: "PE Ratio", importance: 2, isHigherBetter: false)
     //price/book
@@ -67,32 +60,39 @@ class EquityMetricsMgr: MetricsMgr {
     let DEQ = MetricMetaInformation(name: "Debt/Equity", importance: 2, isHigherBetter: false)
     //free cash flow
     let FCF = MetricMetaInformation(name: "FCF", importance: 2, isHigherBetter: true)
-    //PEG Ratio
-    let PEG = MetricMetaInformation(name: "PEG", importance: 2, isHigherBetter: true)
+    //PEG Ratio - i am assigning more importance to this metric than others!
+    let PEG = MetricMetaInformation(name: "PEG", importance: 2, isHigherBetter: false)
     
     let GAIN1M = MetricMetaInformation(name: "Gain 1M", importance: 2, isHigherBetter: true)
     let GAIN3M = MetricMetaInformation(name: "Gain 3M", importance: 2, isHigherBetter: true)
     let PS = MetricMetaInformation(name: "Price/Rev", importance: 2, isHigherBetter: false)
     let VOLUME = MetricMetaInformation(name: "Avg Vol", importance: 2, isHigherBetter: true)
-
-    override init() {
-        super.init()
-        super._stdMetrics["Popular"] = [PE, GAIN1M, GAIN3M]
-        super._allMetrics[PE.name] = PE
-        super._allMetrics[PEG.name] = PEG
+    
+    //% change from 50 day moving average.
+    let PC50 = MetricMetaInformation(name: "%Chg 50DMA", importance: 2, isHigherBetter: true)
+    
+    let PC200 = MetricMetaInformation(name: "%Chg 200DMA", importance: 2, isHigherBetter: true)
+    
+    init() {
+        _stdMetrics["Popular"] = [PE, GAIN1M, GAIN3M]
+        _allMetrics[PE.name] = PE
+        _allMetrics[PEG.name] = PEG
         
-        super._stdMetrics["Basic"] = [PE, GAIN1M, GAIN3M, PS, VOLUME]
-        super._allMetrics[PS.name] = PS
-        super._allMetrics[VOLUME.name] = VOLUME
-        super._allMetrics[PB.name] = PB
-        super._allMetrics[DEQ.name] = DEQ
-        super._allMetrics[FCF.name] = FCF
-        super._allMetrics[PEG.name] = PEG
-        super._allMetrics[GAIN1M.name] = GAIN1M
-        super._allMetrics[GAIN3M.name] = GAIN3M
-
-        super._metricsGroups = ["Popular", "Basic"]
+        _stdMetrics["Basic"] = [PE, GAIN1M, GAIN3M, PS, VOLUME]
+        _allMetrics[PS.name] = PS
+        _allMetrics[VOLUME.name] = VOLUME
+        _allMetrics[PB.name] = PB
+        _allMetrics[DEQ.name] = DEQ
+        _allMetrics[FCF.name] = FCF
+        _allMetrics[PEG.name] = PEG
+        _allMetrics[GAIN1M.name] = GAIN1M
+        _allMetrics[GAIN3M.name] = GAIN3M
+        _allMetrics[PC50.name] = PC50
+        _allMetrics[PC200.name] = PC200
+        
+        _metricsGroups = ["Popular", "Basic"]
     }
+    
 }
 
 
