@@ -66,6 +66,9 @@ import Foundation
                         column = GridColumn(name: key, meta: metaInfo!)
                         grid[key] = column!
                     }
+                    else {
+                        println("null metainfo for \(key)")
+                    }
                 }
                 column!.values.append(metric)
             }

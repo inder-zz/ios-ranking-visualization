@@ -30,9 +30,7 @@
 		B6496A2B1A780BE500A13CB5 /* MetricType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6496A231A780BE500A13CB5 /* MetricType.swift */; };
 		B6496A2C1A780BE500A13CB5 /* Portfolio.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6496A241A780BE500A13CB5 /* Portfolio.swift */; };
 		B6496A2D1A780BE500A13CB5 /* PortfolioMgr.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6496A251A780BE500A13CB5 /* PortfolioMgr.swift */; };
-		B6496A2E1A780BE500A13CB5 /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6496A261A780BE500A13CB5 /* Grid.swift */; };
 		B6496A2F1A780BE500A13CB5 /* MetricsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6496A271A780BE500A13CB5 /* MetricsManager.swift */; };
-		B6496A301A780BE500A13CB5 /* EquityMaster.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6496A281A780BE500A13CB5 /* EquityMaster.swift */; };
 		B6496A361A780C1500A13CB5 /* ScrollableEquitiesRowHeadersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6496A321A780C1500A13CB5 /* ScrollableEquitiesRowHeadersViewController.swift */; };
 		B6496A371A780C1500A13CB5 /* EquityMetricsColumnHeadersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6496A331A780C1500A13CB5 /* EquityMetricsColumnHeadersViewController.swift */; };
 		B6496A381A780C1500A13CB5 /* EquityRowHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6496A341A780C1500A13CB5 /* EquityRowHeaderView.swift */; };
@@ -78,9 +76,7 @@
 		B6496A231A780BE500A13CB5 /* MetricType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetricType.swift; sourceTree = "<group>"; };
 		B6496A241A780BE500A13CB5 /* Portfolio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Portfolio.swift; sourceTree = "<group>"; };
 		B6496A251A780BE500A13CB5 /* PortfolioMgr.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortfolioMgr.swift; sourceTree = "<group>"; };
-		B6496A261A780BE500A13CB5 /* Grid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Grid.swift; sourceTree = "<group>"; };
 		B6496A271A780BE500A13CB5 /* MetricsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetricsManager.swift; sourceTree = "<group>"; };
-		B6496A281A780BE500A13CB5 /* EquityMaster.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EquityMaster.swift; sourceTree = "<group>"; };
 		B6496A321A780C1500A13CB5 /* ScrollableEquitiesRowHeadersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollableEquitiesRowHeadersViewController.swift; sourceTree = "<group>"; };
 		B6496A331A780C1500A13CB5 /* EquityMetricsColumnHeadersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EquityMetricsColumnHeadersViewController.swift; sourceTree = "<group>"; };
 		B6496A341A780C1500A13CB5 /* EquityRowHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EquityRowHeaderView.swift; sourceTree = "<group>"; };
@@ -215,9 +211,7 @@
 				B6496A231A780BE500A13CB5 /* MetricType.swift */,
 				B6496A241A780BE500A13CB5 /* Portfolio.swift */,
 				B6496A251A780BE500A13CB5 /* PortfolioMgr.swift */,
-				B6496A261A780BE500A13CB5 /* Grid.swift */,
 				B6496A271A780BE500A13CB5 /* MetricsManager.swift */,
-				B6496A281A780BE500A13CB5 /* EquityMaster.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -347,8 +341,6 @@
 				B6496A361A780C1500A13CB5 /* ScrollableEquitiesRowHeadersViewController.swift in Sources */,
 				B64969E71A77FB4C00A13CB5 /* ViewController.swift in Sources */,
 				B6496A161A780B1B00A13CB5 /* LineChartView.swift in Sources */,
-				B6496A2E1A780BE500A13CB5 /* Grid.swift in Sources */,
-				B6496A301A780BE500A13CB5 /* EquityMaster.swift in Sources */,
 				B6496A181A780B1B00A13CB5 /* LineChartViewDelegate.swift in Sources */,
 				B6496A3B1A781D2B00A13CB5 /* WatchlistTableViewController.swift in Sources */,
 				B6496A1F1A780BD400A13CB5 /* UIViewExtensions.swift in Sources */,
@@ -563,6 +555,7 @@
 				B6496A001A77FB4C00A13CB5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B6496A011A77FB4C00A13CB5 /* Build configuration list for PBXNativeTarget "RankVizTests" */ = {
 			isa = XCConfigurationList;
@@ -571,6 +564,7 @@
 				B6496A031A77FB4C00A13CB5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

@@ -59,29 +59,40 @@ class MetricsMgr {
 
 class EquityMetricsMgr: MetricsMgr {
 
-    var PE = MetricMetaInformation(name: "PE Ratio", importance: 2, isHigherBetter: false)
-    var GAIN1M = MetricMetaInformation(name: "Gain 1M", importance: 2, isHigherBetter: true)
-    var GAIN3M = MetricMetaInformation(name: "Gain 3M", importance: 2, isHigherBetter: true)
-    var PS = MetricMetaInformation(name: "Price/Rev", importance: 2, isHigherBetter: false)
-    var VOLUME = MetricMetaInformation(name: "Avg Vol", importance: 2, isHigherBetter: true)
+    //price/earnings
+    let PE = MetricMetaInformation(name: "PE Ratio", importance: 2, isHigherBetter: false)
+    //price/book
+    let PB = MetricMetaInformation(name: "PB Ratio", importance: 2, isHigherBetter: false)
+    //deb/equity
+    let DEQ = MetricMetaInformation(name: "Debt/Equity", importance: 2, isHigherBetter: false)
+    //free cash flow
+    let FCF = MetricMetaInformation(name: "FCF", importance: 2, isHigherBetter: true)
+    //PEG Ratio
+    let PEG = MetricMetaInformation(name: "PEG", importance: 2, isHigherBetter: true)
+    
+    let GAIN1M = MetricMetaInformation(name: "Gain 1M", importance: 2, isHigherBetter: true)
+    let GAIN3M = MetricMetaInformation(name: "Gain 3M", importance: 2, isHigherBetter: true)
+    let PS = MetricMetaInformation(name: "Price/Rev", importance: 2, isHigherBetter: false)
+    let VOLUME = MetricMetaInformation(name: "Avg Vol", importance: 2, isHigherBetter: true)
 
     override init() {
         super.init()
-        setup()
-    }
-
-    func setup() {
-        super._metricsGroups = ["Popular", "Basic"]
         super._stdMetrics["Popular"] = [PE, GAIN1M, GAIN3M]
         super._allMetrics[PE.name] = PE
-        super._allMetrics[GAIN1M.name] = GAIN1M
-        super._allMetrics[GAIN3M.name] = GAIN3M
-
+        super._allMetrics[PEG.name] = PEG
+        
         super._stdMetrics["Basic"] = [PE, GAIN1M, GAIN3M, PS, VOLUME]
         super._allMetrics[PS.name] = PS
         super._allMetrics[VOLUME.name] = VOLUME
-    }
+        super._allMetrics[PB.name] = PB
+        super._allMetrics[DEQ.name] = DEQ
+        super._allMetrics[FCF.name] = FCF
+        super._allMetrics[PEG.name] = PEG
+        super._allMetrics[GAIN1M.name] = GAIN1M
+        super._allMetrics[GAIN3M.name] = GAIN3M
 
+        super._metricsGroups = ["Popular", "Basic"]
+    }
 }
 
 
